@@ -12,7 +12,7 @@ export default class NavBar extends React.Component{
     return(
       <div className="navbar">
         <ul className="nav-list">
-          <li><NavLink to="/addresses">All addresses</NavLink></li>
+          <li><NavLink to="/addresses">Show {this.props.match.params.pageTitle}</NavLink></li>
           <li><NavLink to="/addresses/add">Add address</NavLink></li>
         </ul>
       </div>
