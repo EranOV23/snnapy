@@ -10,7 +10,7 @@ class DataService{
         console.log("load addresses from server");
         return fetch(this.url)
             .then(response => response.json())
-            .then(response => response.locations)
+            .then(response => response)
     }
 }
 
